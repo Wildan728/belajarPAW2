@@ -9,3 +9,11 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('Example app listening on port 3000')
 })
+
+app.get('/about', (req, res) => {
+    res.send('Halaman About')
+})
+
+app.get('/contact', (req, res) => {
+    res.send('Halaman Contact')
+})
